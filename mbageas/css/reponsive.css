@@ -1,0 +1,177 @@
+@media (max-width: 575px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* HEADER */
+    .header{
+        align-items: center;
+    }
+    .logo img{
+        height: 7em;
+    }
+    .header .contact-header{
+        font-size: 0.6em;
+        flex-direction: column;
+    }
+    .contact-header .register{
+        margin-right: 0;
+        text-align: center;
+    }
+    .btn.hotline{
+        margin-top: 0.5em;
+    }
+    /* Banner */
+    .banner__title{
+        font-size: 0.6rem;
+    }
+    .banner__title .line-1{
+        text-align: start;
+        margin-left: 9em;
+    }
+    .banner__title .line-2{
+        text-align: start;
+        margin-left: 15em;
+    }
+    .top-banner {
+        flex-direction: column;
+    }
+    .img-bg img{
+        margin-left: 0;
+    }
+    /* FORM */
+    .top-banner .form .diablog{
+        top: -3.5em;
+    }
+    .diablog{
+        font-size: 0.8rem;
+        margin-top: 0;
+        max-width: 100%;
+    }
+    .top-form{
+        text-align: start;
+        padding-left: 4em;
+    }
+    /* BOX AREA */
+    .bot-banner{
+        top: 2em;
+    }
+    .box-area{
+        gap: 1.5em;
+    }
+    .box-area .box{
+        width: 46%;
+    }
+    .inner-box .icon,
+    .inner-box .icon-hover
+    {
+        height: 3.2em;
+    }
+    .box-area .inner-box span{
+        font-size: 1.4em;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    /* HEADER */
+    .logo img{
+        height: 8em;
+    }
+    /* Banner */
+    .top-banner .form .diablog{
+        top: -3.5em;
+    }
+    .banner__title{
+        font-size: 0.8rem;
+    }
+    .banner__title .line-1{
+        text-align: start;
+        margin-left: 9em;
+    }
+    .banner__title .line-2{
+        text-align: start;
+        margin-left: 15em;
+    }
+    .top-banner {
+        flex-direction: column;
+    }
+    .img-bg img{
+        margin-left: 0;
+    }
+    /* FORM */
+    .diablog{
+        margin-top: 0;
+        max-width: 100%;
+    }
+    .top-form{
+        text-align: start;
+        padding-left: 4em;
+    }
+    /* BOX AREA */
+    .bot-banner{
+        top: 2em;
+    }
+    .box-area{
+        gap: 2em;
+    }
+    .box-area .box{
+        width: 47%;
+    }
+    .inner-box .icon,
+    .inner-box .icon-hover
+    {
+        height: 4.5em;
+    }
+    .box-area .inner-box span{
+        font-size: 1.8em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    /* BANNER */
+    .img-bg img{
+        margin-left: -2em;
+    }
+    /* FORM */
+    .diablog{
+        font-size: 0.7rem;
+    }
+      /* BOX AREA */
+      .bot-banner{
+        top: -1em;
+    }
+    .inner-box .icon,
+    .inner-box .icon-hover
+    {
+        height: 3.8em;
+    }
+    .box-area .inner-box span{
+        font-size: 1.6em;
+        margin-top: 0.3em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /* FORM */
+    .diablog{
+        font-size: 0.9rem;
+    }
+    /* BOX AREA */
+    .bot-banner{
+        top: -1em;
+    }
+    .inner-box .icon,
+    .inner-box .icon-hover
+    {
+        height: 4.5em;
+    }
+    .box-area .inner-box span{
+        font-size: 1.8em;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+
+}
+@media (min-width: 1600px){
+    
+}

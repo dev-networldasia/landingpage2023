@@ -1,21 +1,48 @@
 @font-face {
-    font-family: "SourceSansPro";
-    src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: "SourceSansPro";
-    src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2');
-    font-weight: bolder;
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: "SourceSansPro";
-    src: url('../fonts/SourceSansPro-SemiBold.woff2') format('woff2');
-    font-weight: bold;
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Black.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap'); */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,11 +53,12 @@
 :root {
     --red: #950505;
     --black: #373737;
-    --white:#ffffff;
+    --white:#fff;
     --pink: #ea84ab;
     --pink-hover: #dd0071;
     --primary: rgb(91, 197, 242);
     --secondary:  rgb(20, 30, 210);
+    --dark-blue:  rgb(0, 55, 122);
 
     --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
 }
@@ -118,8 +146,6 @@ p:last-child{
 }
 /*--------------------------------------------------------------default--*/
 .container{
-    padding-right: 10px;
-	padding-left: 10px;
     margin: 0 auto;
     width: 100%;
 }
@@ -129,12 +155,13 @@ p:last-child{
 
     .container,
     .container-sm {
+        padding-left: 10px;
+        padding-right: 10px;
         max-width: 90% !important;
     }
 }
 @media (min-width: 768px) {
     .container {
-        padding: 0 10px !important;
         max-width: 720px !important;
     }
 }
