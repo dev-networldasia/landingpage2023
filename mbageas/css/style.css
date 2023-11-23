@@ -437,9 +437,10 @@ input[type=number] {
     /* line-height: 1; */
 }
 .accordion .panel p{
-    padding: 2.5em;
+    padding: 2.5em 1.5em;
     font-size: 1.6em;
     font-weight: 500;
+    margin: 0;
 }
 .accordion .tab{
     display: flex;
