@@ -417,7 +417,6 @@ input[type=number] {
     border: 1px solid var(--pink-hover);
     border-radius: 2rem;
     background-color: var(--white);
-    margin-bottom: 0;
 }
 .accordion .tab{
     width: 100%;
