@@ -162,6 +162,7 @@ p:last-child{
 }
 @media (min-width: 768px) {
     .container {
+        padding: 0;
         max-width: 720px !important;
     }
 }
@@ -171,6 +172,7 @@ p:last-child{
     .container-lg,
     .container-md,
     .container-sm {
+        padding: 0;
         max-width: 879px !important;
     }
 }
@@ -181,6 +183,7 @@ p:last-child{
     .container-md,
     .container-sm,
     .container-xl {
+        padding: 0;
         max-width: 1100px !important;
     }
 }
@@ -192,6 +195,7 @@ p:last-child{
     .container-md,
     .container-sm,
     .container-xl {
+        padding: 0;
         max-width: 1100px !important;
     }
 }
@@ -203,6 +207,7 @@ p:last-child{
     .container-md,
     .container-sm,
     .container-xl {
+        padding: 0;
         max-width: 1200px !important;
     }
 }

@@ -57,7 +57,7 @@ html{
     font-weight: 500;
 }
 .banner{
-    background: url(../img/bg-section1.png);
+    background: url(../img/bg-page.jpg);
     background-repeat: no-repeat;
     padding-top: 15em;
     padding-bottom: 15em;
@@ -285,16 +285,24 @@ input[type=number] {
 .inner-box img{
     height: auto;
 }
-.inner-box .icon-hover{
-    height: auto;
-    display: none;
-}
-.box-area .box:hover .icon{
-    display: none;
+.box:hover img{
+    animation-name: shake;
+    animation-duration: 0.75s;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(125deg) brightness(300%) contrast(101%) !important ;
 }
 .box-area .box:hover .icon-hover{
     display: block;
 }
+@keyframes shake {
+    0%   {transform: scale3d(1, 1, 1);}
+    30%  {transform: scale3d(1.25, 0.75, 1);}
+    40%  {transform: scale3d(0.75, 1.25, 1);}
+    50% {transform: scale3d(1.15, 0.85, 1);}
+    65% {transform: scale3d(0.95, 1.05, 1);}
+    75% {transform: scale3d(1.05, 0.95, 1);}
+    100% {transform: scale3d(1, 1, 1);}
+  }
+  
 /* VIDEO */
 .video-area {
     width: 100%;
@@ -315,15 +323,20 @@ input[type=number] {
     position: relative;
     width: 100%;
     margin-top: 3em;
+    justify-content: space-between;
 }
 .video-area__left{
     position: relative;
-    
+    width: 50%;
+}
+.video-bg-img{
+    width: 100%;
+    object-fit: cover;
 }
 .video-play{
     object-fit: contain;
     width: 100%;
-    width: 552px;
+    /* width: 552px; */
     height: 389px;
 }
 .video-area__left .icon-play{
@@ -342,11 +355,15 @@ input[type=number] {
     position: relative;
     text-align: center;
 }
+.video-area__right{
+    width: 50%;
+}
 .video-play {
     width: 100%;
     position: relative;
     overflow: hidden;
     aspect-ratio: 1.419;
+    border-radius: 2rem;
 }
 .video-play iframe{
     display: block;
@@ -365,11 +382,82 @@ input[type=number] {
 }
 .video-area__left .learnmore{
     position: relative;
-    top: 3.5em;
+    margin-top: 3.5em;
     padding: 1em 7em;
     left: 50%;
     transform: translateX(-50%);
 }
 .video-area__left .learnmore span{
     font-size: 2em;
+}
+.video-area__right .learnmore span{
+    font-size: 2em;
+}
+.video-area__right .learnmore {
+    position: relative;
+    margin-bottom: 4em;
+    padding: 1em 7em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+.video-bg-img img{
+    width: 100%;
+    object-fit: cover;
+}
+/* Tab-box */
+.accordion .panel{
+    position: relative;
+    display: none;
+}
+.accordion {
+    margin-bottom: 2em;
+}
+.video-area__right .accordion.active {
+    border: 1px solid var(--pink-hover);
+    border-radius: 2rem;
+    background-color: var(--white);
+    margin-bottom: 0;
+}
+.accordion .tab{
+    width: 100%;
+    height: 100%;
+    padding: 2em 3.5em;
+    background-color: var(--pink);
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+.accordion.active .tab{
+    background-color: var(--pink-hover);
+}
+.accordion .tab span{
+    color: var(--white);
+    font-size: 1.8em;
+    font-weight: 500;
+    /* line-height: 1; */
+}
+.accordion .panel p{
+    padding: 2.5em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.accordion .tab{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion .tab .close-btn {
+    flex: 0 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    transform: rotate(180deg);
+    transition: 0.3s;
+    margin-left: 1em;
+}
+.accordion .tab .close-btn img{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(125deg) brightness(300%) contrast(101%) !important ;
+}
+.accordion.active .tab .close-btn{
+    transform: rotate(0);
 }
