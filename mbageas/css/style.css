@@ -706,3 +706,44 @@ input[type=number] {
 .mobile-img-section5{
     display: none;
 }
+/* FORM BOTTOM */
+.form-bottom{
+    padding: 15em 0 17em;
+}
+.form-bottom .banner__disc .top-banner{
+    background-color: var(--primary);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 20px 14px 28px, rgba(0, 0, 0, 0.22) 10px 10px 10px;
+}
+.form-bottom .img-bg img{
+    margin-left: 0;
+}
+.form-bottom .banner__disc .img-bg {
+    flex: unset;
+}
+.form-bottom .title h2{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4.8em;
+}
+.form-bottom .banner__disc .form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-bottom .diablog{
+    margin-top: 5em;
+    width: 40em;
+}
+.form-bottom .bg-form{
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+.form-bottom .banner__disc .form{
+    flex: 5;
+}

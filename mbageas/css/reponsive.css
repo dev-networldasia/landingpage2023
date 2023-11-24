@@ -196,6 +196,37 @@
         padding: 1em;
         font-size: 0.8rem;
     }
+    /* FORM BOTTOM */
+    .form-bottom .banner__disc .top-banner{
+        flex-direction: column;
+    }
+    .form-bottom .form{
+        font-size: 1em;
+    }
+    .form-bottom .title{
+        font-size: 0.6rem;
+    }
+    .form-bottom .top-banner .form .diablog{
+        width: 100%;
+        top: 0;
+        margin-top:0;
+    }
+    .form-bottom .banner__disc .img-bg{
+        right: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex: 7;
+    }
+    .form-bottom .img-bg img{
+        object-fit: cover;
+    }
+    .form-bottom .banner__disc .form{
+        flex: 5;
+    }
+    .form-bottom .title h2{
+        margin: 2.5rem 0 3.5rem;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     /* HEADER */
@@ -347,6 +378,37 @@
         margin: 0 auto;
         font-size: 0.9rem;
     }
+    /* FORM BOTTOM */
+    .form-bottom .banner__disc .top-banner{
+        flex-direction: column;
+    }
+    .form-bottom .form{
+        font-size: 1em;
+    }
+    .form-bottom .title{
+        font-size: 0.8rem;
+    }
+    .form-bottom .top-banner .form .diablog{
+        width: 100%;
+        top: 0;
+        margin-top:0;
+    }
+    .form-bottom .banner__disc .img-bg{
+        right: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex: 7;
+    }
+    .form-bottom .img-bg img{
+        object-fit: cover;
+    }
+    .form-bottom .banner__disc .form{
+        flex: 5;
+    }
+    .form-bottom .title h2{
+        margin: 2.5rem 0 3.5rem;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     /* BANNER */
@@ -397,6 +459,29 @@
     .section4 .free-charge__title{
         font-size: 0.8rem;
     }
+    /* FORM BOTTOM */
+    .form-bottom .form{
+        font-size: 0.9em;
+    }
+    .form-bottom .title{
+        font-size: 0.6rem;
+    }
+    .form-bottom .diablog{
+        width: 90%;
+    }
+    .form-bottom .banner__disc .img-bg{
+        right: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex: 7;
+    }
+    .form-bottom .img-bg img{
+        object-fit: cover;
+    }
+    .form-bottom .banner__disc .form{
+        flex: 5;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     /* FORM */
@@ -432,6 +517,29 @@
     }
     .free-charge__img img{
         width: 85%;
+    }
+    /* FORM BOTTOM */
+    .form-bottom .form{
+        font-size: 0.9em;
+    }
+    .form-bottom .title{
+        font-size: 0.8rem;
+    }
+    .form-bottom .diablog{
+        width: 90%;
+    }
+    .form-bottom .banner__disc .img-bg{
+        right: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex: 7;
+    }
+    .form-bottom .img-bg img{
+        object-fit: cover;
+    }
+    .form-bottom .banner__disc .form{
+        flex: 5;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
