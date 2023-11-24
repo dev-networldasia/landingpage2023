@@ -755,7 +755,7 @@ input[type=number] {
 }
 /* FOOTER */
 footer{
-    background-color: var(--primary);
+    background-color: #b7edff;
     padding: 6.5em 0 8.5em;
 }
 .footer-row{
@@ -779,10 +779,10 @@ footer{
     justify-content: flex-end;
 }
 .social .icon-social .img-icon{
-    opacity: 0.64;
     margin-left: 2.5rem;
 }
 .social .icon-social .img-icon img{
+    filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(1055%) hue-rotate(167deg) brightness(100%) contrast(90%);
     max-width: 20px;
     vertical-align: middle;
 }
@@ -802,7 +802,7 @@ footer{
     position: fixed;
     right: 5px;
     top: 26%;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 10px;

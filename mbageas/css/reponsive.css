@@ -409,6 +409,21 @@
     .form-bottom .title h2{
         margin: 2.5rem 0 3.5rem;
     }
+    /* FOOTER */
+    .footer-row{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .footer-disc__down{
+        justify-content: flex-start;
+    }
+    .icon-social {
+        justify-content: flex-start;
+    }
+    .social .icon-social .img-icon{
+        margin-left: 0;
+        margin-right: 2.5em;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     /* BANNER */
@@ -481,6 +496,10 @@
     }
     .form-bottom .banner__disc .form{
         flex: 5;
+    }
+    /* FOOTER */
+    .footer-row{
+        font-size: 0.8rem;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
