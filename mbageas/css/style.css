@@ -801,7 +801,8 @@ footer{
     z-index: 99;
     position: fixed;
     right: 5px;
-    top: 26%;
+    /* top: 26%; */
+    bottom: 20%;
     gap: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.32);

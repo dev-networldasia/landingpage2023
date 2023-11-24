@@ -227,6 +227,21 @@
     .form-bottom .title h2{
         margin: 2.5rem 0 3.5rem;
     }
+    /* FOOTER */
+    .footer-row{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .footer-disc__down{
+        justify-content: flex-start;
+    }
+    .icon-social {
+        justify-content: flex-start;
+    }
+    .social .icon-social .img-icon{
+        margin-left: 0;
+        margin-right: 2.5em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     /* HEADER */
