@@ -59,6 +59,7 @@ html{
 .banner{
     background: url(../img/bg-page.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 15em;
     height: auto;
 }
@@ -311,6 +312,7 @@ input[type=number] {
     font-size: 6.4em;
     font-weight: 500;
     color: var(--pink-hover);
+    margin-bottom: 1rem;
 }
 .video-area__title p{
     font-size: 2.8em;
@@ -516,7 +518,7 @@ input[type=number] {
     font-size: 2em;
     margin-bottom: 7em;
     color: var(--white);
-    padding: 0 5rem;
+    padding: 0 4rem;
 }
 .inner-widget p{
     font-size: 1.6em;
@@ -595,7 +597,7 @@ input[type=number] {
     padding: 0;
 }
 .widget:hover .widget__title{
-    padding: 0 5em;
+    padding: 0 4em;
 }
 .widget:hover .inner-widget p{
     opacity: 1;
@@ -621,6 +623,7 @@ input[type=number] {
     color: var(--pink);
     margin: 0;
     font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 .section3 .video-area__title p{
     font-size: 2.4em;
@@ -652,6 +655,9 @@ input[type=number] {
 }
 .section3 .video-area__right .accordion.active{
     border: none;
+}
+.section3 .accordion {
+    margin-bottom: 3em;
 }
 /* SECTION 4 */
 .section4 {
@@ -746,4 +752,75 @@ input[type=number] {
 }
 .form-bottom .banner__disc .form{
     flex: 5;
+}
+/* FOOTER */
+footer{
+    background-color: var(--primary);
+    padding: 6.5em 0 8.5em;
+}
+.footer-row{
+    display: flex;
+    position: relative;
+    gap: 8em;
+    width: 100%;
+}
+.footer-row-item{
+    flex: 1;
+}
+.footer-row li,
+.reserved span{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--secondary);
+}
+.icon-social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social .icon-social .img-icon{
+    opacity: 0.64;
+    margin-left: 2.5rem;
+}
+.social .icon-social .img-icon img{
+    max-width: 20px;
+    vertical-align: middle;
+}
+.footer-disc__down{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: end;
+}
+.icon-social a:hover img{
+    animation-name: shake;
+    animation-duration: 0.75s;
+}
+/* BOX SUPPORT */
+.items-navigate {
+    z-index: 99;
+    position: fixed;
+    right: 5px;
+    top: 26%;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-navigate li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.items-navigate a {
+    display: block;
+    cursor: pointer;
+}
+
+.items-navigate img {
+    width: 36px;
 }
