@@ -17,6 +17,7 @@
 .widget-area{
     margin-top: 10em;
     display: flex;
+    justify-content: space-between;
 }
 .widget{
     position: relative;
@@ -27,6 +28,13 @@
     background: var(--primary);
     position: relative;
     overflow: hidden;
+    height: 64em;
+}
+.widg-2 {
+    background-color: var(--secondary);
+}
+.widg-3 {
+    background-color: var(--pink);
 }
 .widget__img {
     display: flex;
@@ -98,8 +106,35 @@
     display: flex;
     width: 20em;
     height: 20em;
+    padding: 0;
+    margin-top: 4em;
+    margin-bottom: 3.5em;
     background-color: var(--primary);
 }
+.widget.widg-2:hover .widget__img{
+    background-color: var(--secondary);
+}
+.widget.widg-3:hover .widget__img{
+    background-color: var(--pink);
+}
 .widget:hover .widget__img img{
-    width: 11.5rem;   
+    width: 13rem;   
+}
+.widget:hover .widget__title h2{
+    position: relative;
+    color: var(--black);
+    z-index: 9999;
+    margin-bottom: 0;
+
+}
+.widget:hover .widget__title{
+    padding: 0 5em;
+}
+.widget:hover .inner-widget p{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.widget:hover .inner-widget{
+    padding: 3em 5em 6em 5em;
 }
