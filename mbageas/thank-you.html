@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <title>MB ageas</title>
+    <!-- Google Tag Manager -->    
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-KKDZ96DM');</script>
+    
+    <!-- End Google Tag Manager --> 
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKDZ96DM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="contact-header">
+                <a id="dangkyngay" href="#" class="btn register">
+                    <span>ĐĂNG KÝ NGAY</span>
+                </a>
+                <a href="#" class="btn hotline">
+                    <span>HOTLINE: 024 2229 8888</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <h1>THANK YOU</h1>
+    <footer>
+        <div class="container footer-row">
+            <div class="footer-disc__up footer-row-item">
+                <ul class="located-disc">
+                    <li class="items location">
+                        <span>Tầng 15, Tòa nhà 21 Cát Linh, phường Cát Linh, quận Đống Đa, Hà Nội</span>
+                    </li>
+                    <li class="items phone">
+                        <a href="tel: 024 2229 8888">024 2229 8888</a>
+                    </li>
+                    <li class="items email">
+                        <a href="mailto: dvkh@mbageas.life">dvkh@mbageas.life</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-disc__center footer-row-item">
+                <ul>
+                    <a href="https://www.mbageas.life/page/dieu-khoan-su-dung"><li>Điều khoản sử dụng website</li></a>
+                    <a href="https://www.mbageas.life/page/chinh-sach-bao-mat"><li>Chính sách bảo mật</li></a>
+                    <a href="https://www.mbageas.life/page/bao-mat-quan-trong"><li>Các vấn đề bảo mật quan trọng</li></a>
+                </ul>
+            </div>
+            <div class="footer-disc__down footer-row-item">
+                <div class="footer-contact">
+                    <div class="social">
+                        <div class="icon-social">
+                            <a href="https://www.facebook.com/mbageaslife.official">
+                                <div class="img-icon">
+                                    <img src="img/facebookWhite.svg">
+                                </div>
+                            </a>
+                            <a href="https://zalo.me/1802956676251686389">
+                                <div class="img-icon">
+                                    <img src="img/zaloWhite.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/mbageas-life/">
+                                <div class="img-icon">
+                                    <img src="img/linkedinWhite.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCitFG4N4LZJQOqQJfU-ev1A">
+                                <div class="img-icon">
+                                    <img src="img/youtubeWhite.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reserved">
+                        <span>© 2020 MBAL. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <ul class="items-navigate">
+        <li><a href="https://www.facebook.com/lefoboxvn?mibextid=LQQJ4d" target="_blank"><img src="img/stick_zalo.png" /></a></li>
+        <li onclick="window.open('tel: 0969696980')"><img src="img/facebook_sticker.svg" /></li>
+        <li><a href="https://zalo.me/0379500598" target="_blank"><img src="img/call-sticker.png" /></a></li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+         const element = document.querySelector('.js-choice');
+        const choices = new Choices(element);
+    </script>
+    <script>
+         const element1 = document.querySelector('.js-choice1');
+        const choices1 = new Choices(element1);
+    </script>
+    <script>
+        function get_video_id(url) {
+            var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+            var match = url.match(regExp);
+            return (match && match[7].length == 11) ? match[7] : false;
+        }
+        document.querySelector('.video-play').addEventListener('click', function () {
+            var id = get_video_id(this.getAttribute('data-url'));
+            document.querySelector('.video-play').innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?feature=oembed&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+        });
+
+        document.querySelector('.video-play2').addEventListener('click', function () {
+            var id = get_video_id(this.getAttribute('data-url'));
+            document.querySelector('.video-play2').innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?feature=oembed&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var list = document.querySelectorAll('.tab');
+        list.forEach(function (item) {
+            item.addEventListener("click", function (evt2) {
+
+                var flag = evt2.currentTarget.parentElement.classList.contains('active');
+                if (flag) {
+                    console.log(evt2.currentTarget.parentElement.querySelector('.child-tab'));
+                    evt2.currentTarget.parentElement.classList.remove('active');
+                    $(evt2.currentTarget.parentElement.querySelector('.child-tab')).slideUp(300);
+
+                }
+                else {
+                    document.querySelectorAll('.accordion').forEach(function (re) {
+                        re.classList.remove('active');
+                        $(re.querySelector('.child-tab')).slideUp(300);
+                    });
+                    evt2.currentTarget.parentElement.classList.add('active');
+                    $(evt2.currentTarget.parentElement.querySelector('.child-tab')).slideDown(300);
+                }
+            })
+        });
+
+        //form submit
+        var scriptURL ='https://script.google.com/macros/s/1D45aiVia9McS7SLm9Bv6bBD1mr6d1YNXFAKBRDs1zgn7rhHwzZD8ZPjZ/exec';
+        document.addEventListener("DOMContentLoaded", function () {
+          
+            var forms = document.querySelectorAll('.form_lead');
+            forms.forEach(function (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault()
+                    alert(1);
+                    var formData = new FormData(form);              
+                    handleFormSubmission(formData);
+                });
+            });
+        });
+
+        function handleFormSubmission(formData){
+            var name ="";
+            var phone="";
+            var province_id = 0;
+            var frm_id = "";
+            var link = window.location.href;
+           
+
+            formData.forEach(function(item,key) {
+                if(key == "phone"){
+                    phone = item.trim();
+                } 
+				if(key == "name"){
+                    name = item.trim();
+                }  	
+                if(key == "province_id"){
+                    province_id = item.trim();
+                }  	
+                if(key == "frm_id"){
+                    frm_id = item.trim();
+                }  		
+            });
+
+            var vali = true;
+            var str = "";
+            if (!checkPhoneNumber(phone)) {
+                str += "+ Số điện thoại không đúng!<br/>";
+                vali = false;
+            }
+            if (vali == false) {
+               alert("Nhập sai số điện thoại!");
+            }else{
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                var yyyy = today.getFullYear();
+                var h = today.getHours();
+                var s = today.getMinutes();
+                date_time = dd +"--"+mm+"-"+yyyy+ " "+h+":"+s;	
+
+                utm_source = getUrlParameter('utm_source');
+                utm_medium = getUrlParameter('utm_medium');
+                utm_campaign = getUrlParameter('utm_campaign');
+                utm_term = getUrlParameter('utm_term');
+                utm_content = getUrlParameter('utm_content');				
+                
+                scriptURL += "?form_id="+frm_id+"&name="+name+"&phone="+phone+"&link="+link+"&date_time="+date_time;
+                scriptURL += "&utm_source="+utm_source
+                scriptURL += "&utm_medium="+utm_medium
+                scriptURL += "&utm_campaign="+utm_campaign
+                scriptURL += "&utm_term="+utm_term
+                scriptURL += "&utm_content="+utm_content
+
+                var xhr = new XMLHttpRequest();
+				xhr.open('GET',scriptURL, true);
+				xhr.addEventListener('readystatechange', function(){
+					if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
+						var item = xhr.responseText;
+						var myObj = JSON.parse(item);
+						if(myObj.result == "success"){	
+							var link = location.hostname;
+							window.location.href = "/thank-you.html";
+						}else{
+							window.location.href = "/thank-you.html";
+						}						
+					}
+				});			
+				xhr.send();	
+
+            }
+        }
+        
+        // check so dien thoai
+        function checkPhoneNumber(phone) {
+            var flag = false;
+            var phone = phone.trim(); 
+            phone = phone.replace('(+84)', '0');
+            phone = phone.replace('+84', '0');
+            phone = phone.replace('0084', '0');
+            phone = phone.replace(/ /g, '');
+            if (phone != '') {
+                var firstNumber = phone.substring(0, 2);
+                if ((firstNumber == '09' || firstNumber == '08' || firstNumber == '03' || firstNumber == '05' || firstNumber == '07') && phone.length == 10) {
+                    if (phone.match(/^\d{10}/)) {
+                        flag = true;
+                    }
+                }
+            }
+            return flag;
+        }
+		
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		};
+
+    </script>
+</body>
+</html>
