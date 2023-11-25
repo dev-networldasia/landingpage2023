@@ -11,6 +11,7 @@ html{
     transform: translateX(-50%);
     top: 2em;
     height: 10em;
+    z-index: 9999;
 }
 .header .contact-header{
     display: flex;
@@ -755,7 +756,7 @@ input[type=number] {
 }
 /* FOOTER */
 footer{
-    background-color: #b7edff;
+    background-color: var(--bg-blue);
     padding: 6.5em 0 8.5em;
 }
 .footer-row{
@@ -824,4 +825,59 @@ footer{
 
 .items-navigate img {
     width: 36px;
+}
+/* Thank you */
+.body-thank{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-blue);
+}
+.thank-you{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-thank{
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1em solid var(--white);
+    z-index: 99;
+    background-image: url(../img/gift.png);
+    background-size: cover;
+    width: 729px;
+    height: 382px;
+}
+.inner-thank{
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em;
+}
+.img-thank{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.inner-thank h2{
+    font-size: 2.4em;
+    font-weight: 800;
+    color: var(--pink-hover);
+    margin-bottom: 4rem;
+}
+.inner-thank p{
+    font-size: 1.4em;
+    font-weight: 600;
 }

@@ -1,0 +1,89 @@
+@media (max-width: 575px){
+    .box-thank{
+        background-image: url(../img/gift-mobile.png);
+        width: 388px;
+        height: 494px;
+    }
+    .inner-thank{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 3em;
+    }
+    .thank-you{
+        height: auto;
+        padding-top: 14em;
+    }
+    .footer{
+        padding: 3em 0 3em;
+    }
+    .footer-row{
+        gap: 2em;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .box-thank{
+        background-image: url(../img/gift-mobile.png);
+        width: 388px;
+        height: 494px;
+    }
+    .thank-you{
+        height: auto;
+        padding-top: 14em;
+    }
+    .inner-thank{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 4em;
+    }
+    .footer{
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .body-thank footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 2em 0;
+    }
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .body-thank footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 3em 0;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .body-thank footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .body-thank footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+@media (min-width: 1600px){
+    .body-thank footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}

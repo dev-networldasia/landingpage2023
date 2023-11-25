@@ -59,7 +59,7 @@
     --primary: rgb(91, 197, 242);
     --secondary:  rgb(20, 30, 210);
     --dark-blue:  rgb(0, 55, 122);
-
+    --bg-blue: #b7edff;
     --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
 }
 
