@@ -141,7 +141,7 @@
                                             </select>
                                         </div>
                                         <input type="hidden" name="frm_id" value="form1" />
-                                        <button id="dangky" type="submit" class="btn-form">
+                                        <button id="btn-register-form-1" type="submit" class="btn-form">
                                             <span>ĐĂNG KÝ</span>
                                         </button>
                                     </form>
@@ -193,7 +193,7 @@
                                             src="img/thumb-video.png">
                                     </div>
                                 </div>
-                                <a id="tailieu" href="#" class="btn learnmore">
+                                <a id="tailieu-1" href="#" class="btn learnmore">
                                     <span>TÀI LIỆU THAM KHẢO</span>
                                 </a>
                             </div>
@@ -215,9 +215,9 @@
                                                 <br>
                                                 Bảo hiểm Quẳng Gánh Âu Lo sẽ đem tới cho Bạn 2 quyền lợi lớn: Quyền lợi bảo hiểm to tử vong/ thương tật vĩnh viễn và Quyền lợi đầu tư với mức lãi suất cam kết.
                                             </p>
-                                            <a id="tuvan" href="#" class="btn learnmore">
+                                            <div id="tuvan-1" class="btn learnmore popup">
                                                 <span>Nhận tư vấn miễn phí</span>
-                                            </a>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="accordion">
@@ -232,9 +232,9 @@
                                                 Thời hạn bảo hiểm: 10 năm, 15 năm, 20 năm, 25 năm, Tuổi bảo hiểm 65 và Tuổi bảo hiểm 100
                                                 Thời hạn đóng phí: Từ 3 năm tới bằng Thời hạn hợp đồng
                                             </p>
-                                            <a id="tuvan" href="#" class="btn learnmore">
+                                            <div id="tuvan-2" class="btn learnmore popup">
                                                 <span>Nhận tư vấn miễn phí</span>
-                                            </a>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="accordion active">
@@ -246,9 +246,9 @@
                                         </div>
                                         <div class="panel child-tab" style="display: block;">
                                             <p>Để tham gia Bảo hiểm liên kết chung Quẳng Gánh Âu Lo, Quý khách hàng vui lòng để lại thông tin liên hệ TẠI ĐÂY. Đội ngũ CSKH của MB Ageas Life sẽ liên hệ trong vòng 2-3 giờ làm việc để xác nhận thông tin và kết nối khách hàng tới Chuyên viên tư vấn cao cấp gần nhất.</p>
-                                            <a id="tuvan" href="#" class="btn learnmore">
+                                            <div id="tuvan-3"  class="btn learnmore popup">
                                                 <span>Nhận tư vấn miễn phí</span>
-                                            </a>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -333,7 +333,7 @@
                                     src="img/thumb-video-1.png">
                             </div>
                         </div>
-                        <a id="tailieu" href="#" class="btn learnmore">
+                        <a id="tailieu-2" href="#" class="btn learnmore">
                             <span>TÀI LIỆU THAM KHẢO</span>
                         </a>
                     </div>
@@ -385,7 +385,7 @@
                     <h4>ƯU ĐÃI</h4>
                     <h2>MIỄN PHÍ QUẢN LÝ NĂM ĐẦU</h2>
                     <p>Trong năm đầu tiên, Phí quản lý Hợp đồng được miễn phí toàn bộ, giải phóng mọi lo lắng về chi phí và tối ưu tích luỹ của bạn</p>
-                    <a id="tailieu" href="#form-bottom" class="btn learnmore">
+                    <a id="uudai" href="#form-bottom" class="btn learnmore">
                         <span>NHẬN ƯU ĐÃI</span>
                     </a>
                 </div>
@@ -485,7 +485,7 @@
                                             </select>
                                         </div>
                                         <input type="hidden" name="frm_id" value="form2" />
-                                        <button id="dangky" type="submit" class="btn-form">
+                                        <button id="btn-register-2" type="submit" class="btn-form">
                                             <span>ĐĂNG KÝ</span>
                                         </button>
                                     </form>
@@ -552,6 +552,102 @@
             </div>
         </div>
     </footer>
+    <!-- FORM POPUP -->
+    <div class="form-popup">
+        <div class="bg-form bg-form-popup">
+            <div class="diablog diablog-popup" id="form1">
+                <div class="top-form">
+                    <h2>Đăng ký nhận tư vấn <b>MIỄN PHÍ</b></h2>
+                </div>
+                <div class="bot-form">
+                    <form action="#" method="POST" class="form_lead">
+                        <div class="form">
+                            <input type="text" name="name" value="" style="margin-top: 0;" placeholder="Họ Tên *" required>
+                        </div>
+                        <div class="form">
+                            <input type="number" name="phone" value="" placeholder="Số Điện Thoại *" required>
+                        </div>
+                        <div class="form form-label">
+                            <select name="province_id" class="form-control js-choice2"
+                                data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1"
+                                aria-hidden="true">
+                                <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành</option>
+                                <option value="TP. Hồ Chí Minh" data-select2-id="7">TP. Hồ Chí Minh</option>
+                                <option value="Hà Nội" data-select2-id="8">Hà Nội</option>
+                                <option value="Cần Thơ" data-select2-id="9">Cần Thơ</option>
+                                <option value="Bình Dương" data-select2-id="10">Bình Dương</option>
+                                <option value="Đà Nẵng" data-select2-id="11">Đà Nẵng</option>
+                                <option value="Đồng Nai" data-select2-id="12">Đồng Nai</option>
+                                <option value="Bà Rịa - Vũng Tàu" data-select2-id="13">Bà Rịa - Vũng Tàu</option>
+                                <option value="An Giang" data-select2-id="14">An Giang</option>
+                                <option value="Bình Phước" data-select2-id="15">Bình Phước</option>
+                                <option value="Bình Thuận" data-select2-id="16">Bình Thuận</option>
+                                <option value="Bình Ðịnh" data-select2-id="17">Bình Ðịnh</option>
+                                <option value="Bạc Liêu" data-select2-id="18">Bạc Liêu</option>
+                                <option value="Bắc Giang" data-select2-id="19">Bắc Giang</option>
+                                <option value="Bắc Kạn" data-select2-id="20">Bắc Kạn</option>
+                                <option value="Bắc Ninh" data-select2-id="21">Bắc Ninh</option>
+                                <option value="Bến Tre" data-select2-id="22">Bến Tre</option>
+                                <option value="Cao Bằng" data-select2-id="23">Cao Bằng</option>
+                                <option value="Cà Mau" data-select2-id="24">Cà Mau</option>
+                                <option value="Đắk Lắk" data-select2-id="25">Đắk Lắk</option>
+                                <option value="Đắk Nông" data-select2-id="26">Đắk Nông</option>
+                                <option value="Điện Biên" data-select2-id="27">Điện Biên</option>
+                                <option value="Đồng Tháp" data-select2-id="28">Đồng Tháp</option>
+                                <option value="Gia Lai" data-select2-id="29">Gia Lai</option>
+                                <option value="Hà Giang" data-select2-id="30">Hà Giang</option>
+                                <option value="Hà Nam" data-select2-id="31">Hà Nam</option>
+                                <option value="Hà Tĩnh" data-select2-id="32">Hà Tĩnh</option>
+                                <option value="Hải Dương" data-select2-id="33">Hải Dương</option>
+                                <option value="Hải Phòng" data-select2-id="34">Hải Phòng</option>
+                                <option value="Hậu Giang" data-select2-id="35">Hậu Giang</option>
+                                <option value="Hòa Bình" data-select2-id="36">Hòa Bình</option>
+                                <option value="Hưng Yên" data-select2-id="37">Hưng Yên</option>
+                                <option value="Khánh Hòa" data-select2-id="38">Khánh Hòa</option>
+                                <option value="Kiên Giang" data-select2-id="39">Kiên Giang</option>
+                                <option value="Kon Tum" data-select2-id="40">Kon Tum</option>
+                                <option value="Lai Châu" data-select2-id="41">Lai Châu</option>
+                                <option value="Lạng Sơn" data-select2-id="42">Lạng Sơn</option>
+                                <option value="Lào Cai" data-select2-id="43">Lào Cai</option>
+                                <option value="Lâm Đồng" data-select2-id="44">Lâm Đồng</option>
+                                <option value="Long An" data-select2-id="45">Long An</option>
+                                <option value="Nam Định" data-select2-id="46">Nam Định</option>
+                                <option value="Nghệ An" data-select2-id="47">Nghệ An</option>
+                                <option value="Ninh Bình" data-select2-id="48">Ninh Bình</option>
+                                <option value="Ninh Thuận" data-select2-id="49">Ninh Thuận</option>
+                                <option value="Phú Thọ" data-select2-id="50">Phú Thọ</option>
+                                <option value="Phú Yên" data-select2-id="51">Phú Yên</option>
+                                <option value="Quảng Bình" data-select2-id="52">Quảng Bình</option>
+                                <option value="Quảng Nam" data-select2-id="53">Quảng Nam</option>
+                                <option value="Quảng Ngãi" data-select2-id="54">Quảng Ngãi</option>
+                                <option value="Quảng Ninh" data-select2-id="55">Quảng Ninh</option>
+                                <option value="Quảng Trị" data-select2-id="56">Quảng Trị</option>
+                                <option value="Sóc Trăng" data-select2-id="57">Sóc Trăng</option>
+                                <option value="Sơn La" data-select2-id="58">Sơn La</option>
+                                <option value="Tây Ninh" data-select2-id="59">Tây Ninh</option>
+                                <option value="Thái Bình" data-select2-id="60">Thái Bình</option>
+                                <option value="Thái Nguyên" data-select2-id="61">Thái Nguyên</option>
+                                <option value="Thanh Hóa" data-select2-id="62">Thanh Hóa</option>
+                                <option value="Thừa Thiên Huế" data-select2-id="63">Thừa Thiên Huế</option>
+                                <option value="Tiền Giang" data-select2-id="64">Tiền Giang</option>
+                                <option value="Trà Vinh" data-select2-id="65">Trà Vinh</option>
+                                <option value="Tuyên Quang" data-select2-id="66">Tuyên Quang</option>
+                                <option value="Vĩnh Long" data-select2-id="67">Vĩnh Long</option>
+                                <option value="Vĩnh Phúc" data-select2-id="68">Vĩnh Phúc</option>
+                                <option value="Yên Bái" data-select2-id="69">Yên Bái</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="frm_id" value="form1" />
+                        <button id="btn-register-popup" type="submit" class="btn-form">
+                            <span>ĐĂNG KÝ</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="overlay-form"></div>
+        </div>
+    </div>
+   
     <ul class="items-navigate">
         <li><a href="https://zalo.me/0379500598" target="_blank"><img src="img/stick_zalo.png" /></a></li>
         <li><a href="https://www.facebook.com/lefoboxvn?mibextid=LQQJ4d"><img src="img/facebook_sticker.svg"></a> </li>
@@ -565,6 +661,10 @@
     <script>
          const element1 = document.querySelector('.js-choice1');
         const choices1 = new Choices(element1);
+    </script>
+    <script>
+        const element2 = document.querySelector('.js-choice2');
+        const choices2 = new Choices(element2);
     </script>
     <script>
         function get_video_id(url) {
@@ -717,6 +817,21 @@
 			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 		};
 
+    </script>
+    <!-- JS Contact Form -->
+    <script>
+        const bgform = document.querySelector('.diablog-popup');
+        document.querySelectorAll('.popup').forEach(function (evtpopup) {
+            evtpopup.addEventListener("click", function () {
+            document.querySelector('.bg-form-popup').classList.toggle('active');
+        });
+        });
+        // document.querySelector('.close-btn-form').addEventListener("click", function () {
+        //     document.querySelector('.bg-form-popup').classList.remove('active');
+        // });
+        document.querySelector('.overlay-form').addEventListener("click", function () {
+            document.querySelector('.bg-form-popup').classList.remove('active');
+        });
     </script>
 </body>
 </html>

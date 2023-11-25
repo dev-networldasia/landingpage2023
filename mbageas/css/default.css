@@ -60,6 +60,7 @@
     --secondary:  rgb(20, 30, 210);
     --dark-blue:  rgb(0, 55, 122);
     --bg-blue: #b7edff;
+    --black-opacity2: rgba(0, 0, 0, 0.8);
     --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
 }
 
