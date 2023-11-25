@@ -41,32 +41,41 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     .body-thank footer{
-        position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
         z-index: 1;
-        padding: 2em 0;
     }
-    
+    .thank-you{
+        height: 100%;
+        padding-top: 14em;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .body-thank footer{
-        position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
         z-index: 1;
-        padding: 3em 0;
+    }
+    .thank-you{
+        height: 100%;
+        padding-top: 14em;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .body-thank footer{
-        position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
         z-index: 1;
+    }
+    .thank-you{
+        height: 100%;
+        padding-top: 14em;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){

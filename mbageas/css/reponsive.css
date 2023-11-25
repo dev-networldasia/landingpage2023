@@ -129,6 +129,12 @@
     .section2 .title{
         font-size: 0.7rem;
     }
+    .section2 .title h2{
+        font-size: 5.2em;
+    }
+    .section2 .title h4{
+        margin-bottom: 0.5rem;
+    }
     .widget {
         font-size: 0.6em;
         width: 100%;
