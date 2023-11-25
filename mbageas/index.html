@@ -613,7 +613,6 @@
             forms.forEach(function (form) {
                 form.addEventListener('submit', function (e) {
                     e.preventDefault()
-                    alert("---> vao form ------")
                     var formData = new FormData(form);              
                     handleFormSubmission(formData);
                 });
