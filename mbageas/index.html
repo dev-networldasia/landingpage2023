@@ -8,18 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reponsive.css">
     <title>MB ageas</title>
-    <!-- Google Tag Manager -->
-    
+    <!-- Google Tag Manager -->    
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-
-                    new Date().getTime(), event: 'gtm.js'
+                'gtm.start':new Date().getTime(), event: 'gtm.js'
             }); var f = d.getElementsByTagName(s)[0],
-
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 
         })(window, document, 'script', 'dataLayer', 'GTM-KKDZ96DM');</script>
     
@@ -71,24 +65,18 @@
                                     <h2>Đăng ký nhận tư vấn <b>MIỄN PHÍ</b></h2>
                                 </div>
                                 <div class="bot-form">
-                                    <form action="#">
+                                    <form action="#" method="POST" class="form_lead">
                                         <div class="form">
-                                            <input type="text" style="margin-top: 0;" placeholder="Họ Tên *">
+                                            <input type="text" name="name" value="" style="margin-top: 0;" placeholder="Họ Tên *" required>
                                         </div>
                                         <div class="form">
-                                            <input type="number" placeholder="Số Điện Thoại *">
+                                            <input type="number" name="phone" value="" placeholder="Số Điện Thoại *" required>
                                         </div>
                                         <div class="form form-label">
-                                            <select name="province_id" class="form-control js-choice"
-                                                data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1"
-                                                aria-hidden="true">
-                                                <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành
-                                                </option>
-            
-                                                <option value="58" data-select2-id="7">TP. Hồ Chí Minh</option>
-            
-                                                <option value="24" data-select2-id="8">Hà Nội</option>
-            
+                                            <select name="province_id" class="form-control js-choice" data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1" aria-hidden="true">
+                                                <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành</option>            
+                                                <option value="58" data-select2-id="7">TP. Hồ Chí Minh</option>            
+                                                <option value="24" data-select2-id="8">Hà Nội</option>            
                                                 <option value="14" data-select2-id="9">Cần Thơ</option>
             
                                                 <option value="3" data-select2-id="10">Bình Dương</option>
@@ -213,7 +201,8 @@
             
                                             </select>
                                         </div>
-                                        <button id="dangky" class="btn-form">
+                                        <input type="hidden" name="frm_id" value="form1" />
+                                        <button id="dangky" type="submit" class="btn-form">
                                             <span>ĐĂNG KÝ</span>
                                         </button>
                                     </form>
@@ -743,6 +732,106 @@
                 }
             })
         });
+
+        //form submit
+        var scriptURL ='https://script.google.com/macros/s/1D45aiVia9McS7SLm9Bv6bBD1mr6d1YNXFAKBRDs1zgn7rhHwzZD8ZPjZ/exec';
+        document.addEventListener("DOMContentLoaded", function () {
+          
+            var forms = document.querySelectorAll('.form_lead');
+            forms.forEach(function (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault()
+                    alert(1);
+                    var formData = new FormData(form);              
+                    handleFormSubmission(formData);
+                });
+            });
+        });
+
+        function handleFormSubmission(formData){
+            var name ="";
+            var phone="";
+            var province_id = 0;
+            var frm_id = "";
+            var link = window.location.href;
+           
+
+            formData.forEach(function(item,key) {
+                if(key == "phone"){
+                    phone = item.trim();
+                } 
+				if(key == "name"){
+                    name = item.trim();
+                }  	
+                if(key == "province_id"){
+                    province_id = item.trim();
+                }  	
+                if(key == "frm_id"){
+                    frm_id = item.trim();
+                }  		
+            });
+
+            var vali = true;
+            var str = "";
+            if (!checkPhoneNumber(phone)) {
+                str += "+ Số điện thoại không đúng!<br/>";
+                vali = false;
+            }
+            if (vali == false) {
+               alert("Nhập sai số điện thoại!");
+            }else{
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                var yyyy = today.getFullYear();
+                var h = today.getHours();
+                var s = today.getMinutes();
+                date_time = dd +"--"+mm+"-"+yyyy+ " "+h+":"+s;	
+
+                utm_source = getUrlParameter('utm_source');
+                utm_medium = getUrlParameter('utm_medium');
+                utm_campaign = getUrlParameter('utm_campaign');
+                utm_term = getUrlParameter('utm_term');
+                utm_content = getUrlParameter('utm_content');				
+                
+                scriptURL += "?name="+name+"&phone="+phone+"&link="+link+"&date_time="+date_time;
+                scriptURL += "&utm_source="+utm_source
+                scriptURL += "&utm_medium="+utm_medium
+                scriptURL += "&utm_campaign="+utm_campaign
+                scriptURL += "&utm_term="+utm_term
+                scriptURL += "&utm_content="+utm_content
+
+                console.log(name,phone,province_id,frm_id)
+                console.log(link);
+            }
+        }
+        
+        // check so dien thoai
+        function checkPhoneNumber(phone) {
+            var flag = false;
+            var phone = phone.trim(); 
+            phone = phone.replace('(+84)', '0');
+            phone = phone.replace('+84', '0');
+            phone = phone.replace('0084', '0');
+            phone = phone.replace(/ /g, '');
+            if (phone != '') {
+                var firstNumber = phone.substring(0, 2);
+                if ((firstNumber == '09' || firstNumber == '08' || firstNumber == '03' || firstNumber == '05' || firstNumber == '07') && phone.length == 10) {
+                    if (phone.match(/^\d{10}/)) {
+                        flag = true;
+                    }
+                }
+            }
+            return flag;
+        }
+		
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		};
+
     </script>
 </body>
 </html>
