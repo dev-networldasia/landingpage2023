@@ -754,6 +754,9 @@ input[type=number] {
 .form-bottom .banner__disc .form{
     flex: 5;
 }
+.choices__list--single .choices__item{
+    opacity: 1;
+}
 /* FOOTER */
 footer{
     background-color: var(--bg-blue);
@@ -778,6 +781,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 0.5em;
 }
 .social .icon-social .img-icon{
     margin-left: 2.5rem;
@@ -796,6 +800,9 @@ footer{
 .icon-social a:hover img{
     animation-name: shake;
     animation-duration: 0.75s;
+}
+.footer-row li, .reserved span{
+    margin-bottom: 0.2rem;
 }
 /* BOX SUPPORT */
 .items-navigate {
