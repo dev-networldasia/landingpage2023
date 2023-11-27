@@ -59,9 +59,11 @@ html{
 }
 .banner{
     background: url(../img/bg-page.jpg);
+    background-color: var(--bg-blue);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     padding-top: 15em;
+    padding-bottom: 5em;
     height: auto;
 }
 .banner__title{
