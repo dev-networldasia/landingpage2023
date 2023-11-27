@@ -220,6 +220,7 @@ input[type=number] {
     border-radius: 1.4rem
 }
 .choices[data-type*=select-one] .choices__input {
+    border: none;
     border-bottom: 1px solid var(--primary);
     border-radius: 0;
 }
