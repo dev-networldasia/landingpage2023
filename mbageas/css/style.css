@@ -1045,9 +1045,9 @@ footer .logo{
 .close-btn-form{
     position: absolute;
     right: 3em;
-    top: 2em;
-    width: 2.5em;
-    height: 2.5em;
+    top: 1em;
+    width: 3.5em;
+    height: 3.5em;
     cursor: pointer;
 
 }
