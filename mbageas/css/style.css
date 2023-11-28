@@ -33,7 +33,7 @@ header.fixed .header{
     align-items: flex-end;
 }
 .logo{
-    width: 100%;
+    width: fit-content;
 }
 .logo img{
     object-fit: contain;
@@ -558,10 +558,15 @@ input[type=number] {
     height: 0;
 }
 .inner-widget span{
-    font-size: 1.3em;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    height: 0;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
 }
 .widget__img img{
-    width: 100%;
+    /* width: 100%; */
 }
 .widget:hover:before {
     -webkit-transform: scale(1, 1);
@@ -613,7 +618,7 @@ input[type=number] {
 .widget:hover .widget__title h2{
     position: relative;
     color: var(--black);
-    z-index: 9999;
+    z-index: 9997;
     margin-bottom: 0;
     padding: 0;
 }
@@ -621,6 +626,12 @@ input[type=number] {
     padding: 0 4em;
 }
 .widget:hover .inner-widget p{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    font-weight: 500;
+}
+.widget:hover .inner-widget span{
     opacity: 1;
     visibility: visible;
     height: 100%;
@@ -670,6 +681,7 @@ input[type=number] {
 .section3 .accordion .tab{
     justify-content: start;
     align-items: center;
+    cursor: default;
 }
 .section3 .accordion.active .tab{
     background-color: var(--pink);
@@ -829,6 +841,9 @@ footer .logo img{
 }
 footer .logo{
     padding: 0;
+}
+footer .logo{
+    width: auto;;
 }
 .footer-disc__up{
     flex: 2;
