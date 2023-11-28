@@ -303,6 +303,10 @@
     footer .logo img{
         width: auto;
     }
+    /* form tailieu */
+    .form-popup1 .bg-form.active .diablog-popup, .form-popup2 .bg-form.active .diablog-popup{
+        padding: 4.5em 1em 1em 1em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     /* HEADER */
