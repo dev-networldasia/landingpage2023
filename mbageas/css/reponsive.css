@@ -29,6 +29,12 @@
         top: 0;
         padding: 1em 1em;
     }
+    .contact-header .register{
+        background-color: var(--secondary);
+    }
+    .contact-header .hotline{
+        background-color: var(--pink-hover);
+    }
     /* Banner */
     .banner{
         background: url(../img/bg-mobile.jpg);
@@ -180,7 +186,7 @@
         flex-direction: column-reverse;
     }
     .section3 .video-area__disc .video-area__right{
-        padding: 0 6em;
+        padding: 0 3em;
     }
     .section3 .video-area__title{
         text-align: start;
