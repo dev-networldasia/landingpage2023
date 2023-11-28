@@ -21,6 +21,13 @@
     .btn.hotline{
         margin-top: 0.5em;
     }
+    header.fixed{
+        height: 10em;
+    }
+    header.fixed .header{
+        top: 0;
+        padding: 1em 1em;
+    }
     /* Banner */
     .banner{
         background: url(../img/bg-mobile.jpg);
@@ -253,6 +260,13 @@
     /* HEADER */
     .logo img{
         height: 8em;
+    }
+    header.fixed{
+        height: 10em;
+    }
+    header.fixed .header{
+        top: 0;
+        padding: 1em 1em;
     }
     /* Banner */
     .banner{

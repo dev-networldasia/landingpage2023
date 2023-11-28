@@ -26,7 +26,7 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     
     <!-- End Google Tag Manager (noscript) -->
-    <header>
+    <header id="navbar">
         <div class="container header">
             <div class="logo">
                 <img src="img/logo.png" alt="">
@@ -277,11 +277,9 @@
                                 <br>vững vàng trước mọi rủi ro</h2>
                         </div>
                         <div class="inner-widget">
-                            <p> - Chủ động lựa chọn Quỹ đầu tư & Tỷ lệ đầu tư vào mỗi Quỹ dựa trên khẩu vị rủi ro.
-                                <br>- Miễn phí 05 lần chuyển đổi Quỹ đầu tiên trong mỗi Năm Hợp đồng.
-                                <br>- Gia tăng quyền lợi đầu tư trên Giá trị tài khoản quỹ đóng thêm, với mức Phí đóng thêm mỗi năm lên đến 10
-                                lần Phí bảo hiểm cơ bản.
-                                <br>- Miễn phí rút tiền từ Giá trị tài khoản quỹ đóng thêm để chủ động thay đổi kế hoạch đầu tư bất kỳ lúc nào.
+                            <p>- Quyền lợi Tử vong/ Thương tật toàn bộ vĩnh viễn 
+                                <br>- Quyền lợi tích lũy an toàn với lãi suất cam kết từ quỹ liên kết chung
+                                <br>- Quyền lợi Thưởng đặc biệt khi duy trì đóng phí từ 5 năm trở lên. 
                             </p>
                         </div>
                     </div>
@@ -307,12 +305,13 @@
                     </div>
                     <div class="widget__disc">
                         <div class="widget__title">
-                            <h2>Tư vấn nhanh chóng, đúng nhu cầu bởi các Tư vấn viên MDRT hàng đầu tại MB Ageas Life 
+                            <h2>Tư vấn <b>NHANH CHÓNG - CHUYÊN NGHIỆP - ĐÚNG NHU CẦU</b>
                             </h2>
                         </div>
                         <div class="inner-widget">
-                            <p> Trong Năm Hợp đồng đầu tiên, Phí quản lý Hợp đồng được miễn toàn bộ.
+                            <p>Các chuyên gia tư vấn tài chính MRDT hàng đầu của MB Ageas Life sẽ nhanh chóng liên hệ và tư vấn giải pháp bảo vệ phù hợp nhất với nhu cầu cũng như năng lực tài chính của Bạn.
                             </p>
+                            <span>*MDRT là danh hiệu quốc tế, dành riêng cho các chuyên gia tư vấn tài chính bảo hiểm xuất sắc hàng đầu tại các doanh nghiệp bảo hiểm.</span>
                         </div>
                     </div>
                 </div>
@@ -498,6 +497,9 @@
         </div>
     </section>
     <footer>
+        <div class="container logo">
+            <img src="img/logo-white-mbageas 360x179.png" alt="">
+        </div>
         <div class="container footer-row">
             <div class="footer-disc__up footer-row-item">
                 <ul class="located-disc">
@@ -653,6 +655,21 @@
         <li><a href="https://www.facebook.com/mbageaslife.official"><img src="img/facebook_sticker.svg"></a> </li>
         <li><a href="tel:02422298888"><img src="img/call-sticker.png" /></a></li>
     </ul>
+    <!-- Navbar Menu -->
+    <script>
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        window.onscroll = function() {
+            scrollFunction()};
+        console.log(window.onscroll);
+        function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            navbar.classList.add("fixed");
+          } else {
+            navbar.classList.remove("fixed");
+          }
+        };
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script>
          const element = document.querySelector('.js-choice');
