@@ -33,6 +33,7 @@
             </div>
             <div class="contact-header">
                 <a id="btn-register-1" href="#form1" class="btn register">
+                    <div class="glow">&nbsp;</div>
                     <span>Nhận tư vấn MIỄN PHÍ</span>
                 </a>
                 <a href="tel:02422298888" id="btn-phone-1" class="btn hotline">
@@ -193,9 +194,9 @@
                                             src="img/thumb-video.png">
                                     </div>
                                 </div>
-                                <a id="tailieu-1" href="https://www.mbageas.life/uploads/qisA8QHmbTDxDYGn4Ns30/6.%20ULRP3.0_Agency_update_v4.0%20-%20RGB.pdf" target="_blank" class="btn learnmore">
+                                <div id="tailieu-1" href="https://www.mbageas.life/uploads/qisA8QHmbTDxDYGn4Ns30/6.%20ULRP3.0_Agency_update_v4.0%20-%20RGB.pdf" target="_blank" class="btn learnmore popuptailieu1">
                                     <span>TÀI LIỆU THAM KHẢO</span>
-                                </a>
+                                </div>
                             </div>
                             <div class="video-area__right">
                                 <ul class="main-tab">
@@ -332,9 +333,9 @@
                                     src="img/thumb-video-1.png">
                             </div>
                         </div>
-                        <a id="tailieu-2" target="_blank" href="https://www.mbageas.life/uploads/-cZ9oWV23EIoa12Fk-WOo/B%E1%BA%A3ng%20minh%20h%E1%BB%8Da%20quy%E1%BB%81n%20l%E1%BB%A3i%20s%E1%BA%A3n%20ph%E1%BA%A9m.pdf" class="btn learnmore">
+                        <div id="tailieu-2" target="_blank" href="https://www.mbageas.life/uploads/-cZ9oWV23EIoa12Fk-WOo/B%E1%BA%A3ng%20minh%20h%E1%BB%8Da%20quy%E1%BB%81n%20l%E1%BB%A3i%20s%E1%BA%A3n%20ph%E1%BA%A9m.pdf" class="btn learnmore popuptailieu2">
                             <span>TÀI LIỆU THAM KHẢO</span>
-                        </a>
+                        </div>
                     </div>
                     <div class="video-area__right">
                         <div class="video-area__title">
@@ -395,10 +396,10 @@
         <div class="container">
             <div class="banner__disc" id="lienhe">
                 <div class="top-banner">
-                    <div class="img-bg">
+                    <a class="img-bg" href="#click-form">
                         <img src="img/img-section6.png" alt="">
-                    </div>
-                    <div class="form">
+                    </a>
+                    <div class="form" id="click-form">
                         <div class="title">
                             <h2>Trao đổi và tư vấn</h2>
                         </div>
@@ -649,7 +650,30 @@
             <div class="overlay-form"></div>
         </div>
     </div>
-   
+    <!-- FORM POPUP TAI LIEU 1 -->
+    <div class="form-popup1">
+        <div class="bg-form bg-form-popuptailieu1">
+            <div class="diablog diablog-popup">
+                <div class="close-btn-form">
+                    <img src="img/close-btn (1).png">
+                </div>
+               <iframe src="https://www.mbageas.life/uploads/qisA8QHmbTDxDYGn4Ns30/6.%20ULRP3.0_Agency_update_v4.0%20-%20RGB.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="overlay-formtailieu1"></div>
+        </div>
+    </div>
+    <!-- FORM POPUP TAI LIEU 2 -->
+    <div class="form-popup2">
+        <div class="bg-form bg-form-popuptailieu2">
+            <div class="diablog diablog-popup">
+                <div class="close-btn-form tailieu2">
+                    <img src="img/close-btn (1).png">
+                </div>
+               <iframe src="https://www.mbageas.life/uploads/-cZ9oWV23EIoa12Fk-WOo/B%E1%BA%A3ng%20minh%20h%E1%BB%8Da%20quy%E1%BB%81n%20l%E1%BB%A3i%20s%E1%BA%A3n%20ph%E1%BA%A9m.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="overlay-formtailieu2"></div>
+        </div>
+    </div>
     <ul class="items-navigate">
         <li><a href="https://zalo.me/1802956676251686389 " target="_blank"><img src="img/stick_zalo.png" /></a></li>
         <li><a href="https://www.facebook.com/mbageaslife.official"><img src="img/facebook_sticker.svg"></a> </li>
@@ -848,6 +872,36 @@
         // });
         document.querySelector('.overlay-form').addEventListener("click", function () {
             document.querySelector('.bg-form-popup').classList.remove('active');
+        });
+    </script>
+    <!-- JS Contact Form Tai lieu 1-->
+    <script>
+        const bgform1 = document.querySelector('.diablog-popup1');
+        document.querySelectorAll('.popuptailieu1').forEach(function (evtpopuptailieu1) {
+            evtpopuptailieu1.addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu1').classList.toggle('active');
+        });
+        });
+        document.querySelector('.close-btn-form').addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu1').classList.remove('active');
+        });
+        document.querySelector('.overlay-formtailieu1').addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu1').classList.remove('active');
+        });
+    </script>
+    <!-- JS Contact Form Tai lieu 2-->
+    <script>
+        const bgform2 = document.querySelector('.diablog-popup2');
+        document.querySelectorAll('.popuptailieu2').forEach(function (evtpopuptailieu2) {
+            evtpopuptailieu2.addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu2').classList.toggle('active');
+        });
+        });
+        document.querySelector('.close-btn-form').addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu2').classList.remove('active');
+        });
+        document.querySelector('.tailieu2').addEventListener("click", function () {
+            document.querySelector('.bg-form-popuptailieu2').classList.remove('active');
         });
     </script>
 </body>

@@ -12,8 +12,9 @@
         height: 7em;
     }
     .header .contact-header{
-        font-size: 0.6em;
+        font-size: 0.8em;
         flex-direction: column;
+        overflow: hidden;
     }
     .contact-header .register{
         margin-right: 0;
@@ -33,7 +34,7 @@
         background-color: var(--secondary);
     }
     .contact-header .hotline{
-        background-color: var(--pink-hover);
+        display: none;
     }
     /* Banner */
     .banner{
@@ -59,8 +60,9 @@
         margin-left: 0;
     }
     /* FORM */
-    .top-banner .form .diablog{
-        top: -3.5em;
+    .banner .top-banner .form .diablog{
+        top: -7.5em;
+        background: transparent;
     }
     .diablog{
         font-size: 0.8rem;
@@ -70,6 +72,20 @@
     .top-form{
         text-align: start;
         padding-left: 4em;
+    }
+    .banner .bot-form .btn-form{
+        background-color: var(--secondary);
+    }
+    .banner .bot-form .form input{
+        border-color: var(--white);
+        background-color: transparent;
+    }
+    .banner .choices__inner{
+        border-color: var(--white);
+        background-color: transparent;
+    }
+    .banner .top-form h2{
+        font-weight: 600;
     }
     /* BOX AREA */
     .bot-banner{
@@ -112,6 +128,9 @@
     }
     .video-play{
         height: auto;
+    }
+    .video-area__disc .btn{
+        background-color: var(--secondary);
     }
     /* VIDEO AREA */
     .video-area{
@@ -198,7 +217,7 @@
     .section4{
         height: auto;
         background-size: cover;
-        padding: 7em 0 6.5em;
+        padding: 1em 0 2.5em;
     }
     .img-section5{
         display: none;
@@ -222,6 +241,9 @@
         width: 100%;
         padding: 1em;
         font-size: 0.8rem;
+    }
+    .free-charge__title .learnmore{
+        background-color: var(--secondary);
     }
     /* FORM BOTTOM */
     .form-bottom{
@@ -257,6 +279,9 @@
     .form-bottom .title h2{
         margin: 2.5rem 0 3.5rem;
     }
+    .bot-form .btn-form{
+        background-color: var(--secondary);
+    }
     /* FOOTER */
     .footer-row{
         flex-direction: column;
@@ -274,6 +299,9 @@
     }
     footer{
         padding: 3.5em 0 4em;
+    }
+    footer .logo img{
+        width: auto;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
