@@ -154,11 +154,13 @@
     .widget {
         font-size: 0.6em;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         margin-bottom: 5em;
+        min-height: 86em;
     }
     .widget__title h2{
-        font-size: 3.5em;
+        font-size: 3em;
+        margin-bottom: 2em;
     }
     .widget:hover .widget__img{
         width: 35em;
@@ -170,11 +172,12 @@
         width: 21em;
     }
     .inner-widget p{
-        font-size: 2.8em;
+        font-size: 2.6em;
     }
     .widget:hover .inner-widget{
         padding: 3em 3em 4em 3em;
     }
+    
     /* VIDEO section 3 */
     .section3{
         padding: 5em 0 4em;
