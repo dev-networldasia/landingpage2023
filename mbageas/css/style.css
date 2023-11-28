@@ -885,7 +885,7 @@ footer .logo{
 /* Thank you */
 .body-thank{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-blue);
 }
 .thank-you{
@@ -904,10 +904,8 @@ footer .logo{
     overflow: hidden;
     border: 1em solid var(--white);
     z-index: 99;
-    background-image: url(../img/gift.png);
     background-size: cover;
-    width: 729px;
-    height: 382px;
+    width: auto;
 }
 .inner-thank{
     z-index: 1;
