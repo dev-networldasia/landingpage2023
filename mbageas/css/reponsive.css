@@ -623,6 +623,12 @@
     .widget {
         font-size: 0.6em;
     }
+    .widget:hover .inner-widget p{
+        font-size: 1.8em;
+    }
+    .widget:hover .inner-widget span{
+        font-size: 1.4em;
+    }
     /* section5 */
     .free-charge__img{
         left: -30em;
