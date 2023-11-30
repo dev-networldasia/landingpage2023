@@ -719,9 +719,7 @@
                         <div class="swiper-pagination"></div>
                       </div>
                 </div>
-                <a href="https://www.mbageas.life/uploads/qisA8QHmbTDxDYGn4Ns30/6.%20ULRP3.0_Agency_update_v4.0%20-%20RGB.pdf" target="_blank" class="btn download">
-                    <span>DOWNLOAD</span>
-                </a>
+                <button id="btn-popup-doc1" class="btn btn-prink-hover download">NHẬN TƯ VẤN MIỄN PHÍ</button>
             </div>
             <div class="overlay-formtailieu1"></div>
         </div>
@@ -788,9 +786,7 @@
                         <div class="swiper-pagination"></div>
                       </div>
                 </div>
-                <a href="https://www.mbageas.life/uploads/-cZ9oWV23EIoa12Fk-WOo/B%E1%BA%A3ng%20minh%20h%E1%BB%8Da%20quy%E1%BB%81n%20l%E1%BB%A3i%20s%E1%BA%A3n%20ph%E1%BA%A9m.pdf" target="_blank" class="btn download">
-                    <span>DOWNLOAD</span>
-                </a>
+                <button id="btn-popup-doc2" class="btn btn-prink-hover download">NHẬN TƯ VẤN MIỄN PHÍ</button>
             </div>
             <div class="overlay-formtailieu2"></div>
         </div>
@@ -1040,6 +1036,17 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+    <script>
+        document.querySelector("#btn-popup-doc1").addEventListener("click",function(e){
+            document.querySelector('.bg-form-popuptailieu1').classList.remove('active');
+            document.querySelector('.bg-form-popup').classList.toggle('active');
+        });
+        document.querySelector("#btn-popup-doc2").addEventListener("click",function(e){
+            document.querySelector('.bg-form-popuptailieu2').classList.remove('active');
+            document.querySelector('.bg-form-popup').classList.toggle('active');
+        });
+
     </script>
 </body>
 </html>

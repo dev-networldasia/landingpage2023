@@ -1,6 +1,15 @@
 html{
     font-size: 62.5%;
 }
+picture{
+    margin-bottom: -5px;
+}
+button{
+    border: none;
+}
+.btn-prink-hover:hover{
+    background-color: var(--pink);
+}
 /* Header */
 .header{
     display: flex;
@@ -844,9 +853,7 @@ footer{
 footer .logo img{
     width: 180px;
 }
-footer .logo{
-    /* padding: 0; */
-}
+
 footer .logo{
     width: auto;;
 }
@@ -909,7 +916,7 @@ footer .logo{
 }
 .inner-thank{
     z-index: 1;
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 100%;
     text-align: center;

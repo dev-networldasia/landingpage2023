@@ -16,14 +16,22 @@
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
+    .header{
+        align-items: center;
+    }
     .thank-you{
         height: auto;
         padding-top: 14em;
     }
     .inner-thank{
-        width: 100%;
-        justify-content: flex-start;
-        padding-top: 4em;
+        width: 60%;
+        padding-left: 0.5em;
+    }
+    .inner-thank h2 {
+        font-size: 2em;
+    }
+    .inner-thank p {
+        font-size: 1.35em;
     }
     .footer{
         padding: 0;
