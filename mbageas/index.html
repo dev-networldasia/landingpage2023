@@ -85,7 +85,7 @@
                                             <input type="number" name="phone" value="" placeholder="Số Điện Thoại *" required>
                                         </div>
                                         <div class="form form-label">
-                                            <select required name="province_id" class="form-control js-choice" data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1" aria-hidden="true">
+                                            <select name="province_id" class="form-control js-choice" data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1" aria-hidden="true">
                                                 <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành</option>            
                                                 <option value="TP. Hồ Chí Minh" data-select2-id="7">TP. Hồ Chí Minh</option>            
                                                 <option value="Hà Nội" data-select2-id="8">Hà Nội</option>
@@ -428,7 +428,7 @@
                                             <input type="number" name="phone" value="" placeholder="Số Điện Thoại *" required>
                                         </div>
                                         <div class="form form-label">
-                                            <select required name="province_id" class="form-control js-choice1" data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1" aria-hidden="true">
+                                            <select name="province_id" class="form-control js-choice1" data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1" aria-hidden="true">
                                                 <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành</option>            
                                                 <option value="TP. Hồ Chí Minh" data-select2-id="7">TP. Hồ Chí Minh</option>            
                                                 <option value="Hà Nội" data-select2-id="8">Hà Nội</option>
@@ -582,7 +582,7 @@
                             <input type="number" name="phone" value="" placeholder="Số Điện Thoại *" required>
                         </div>
                         <div class="form form-label">
-                            <select required name="province_id" class="form-control js-choice2"
+                            <select name="province_id" class="form-control js-choice2"
                                 data-placeholder="Chọn thành phố / tỉnh" data-select2-id="province_id" tabindex="-1"
                                 aria-hidden="true">
                                 <option value="" selected="" disabled="" hidden="" data-select2-id="2">Tỉnh Thành</option>
@@ -896,7 +896,7 @@
         function handleFormSubmission(formData){
             var name ="";
             var phone="";
-            var province_id = 0;
+            var province_id = "";
             var frm_id = "";
             var link = window.location.href;
            
@@ -919,11 +919,21 @@
             var vali = true;
             var str = "";
             if (!checkPhoneNumber(phone)) {
-                str += "+ Số điện thoại không đúng!<br/>";
+                str += "+ Số điện thoại không đúng";
                 vali = false;
             }
+
+            if (province_id == 0 || province_id==""){
+                if (str !=""){
+                    str = "Số điện thoại không đúng và chưa chọn tỉnh thành!"
+                }else{
+                    str = "+ Vui Lòng Chọn Tỉnh Thành";
+                }                
+                vali = false;
+            }
+
             if (vali == false) {
-               alert("Nhập sai số điện thoại!");
+               alert(str);
             }else{
                 var today = new Date();
                 var dd = String(today.getDate()).padStart(2, '0');
