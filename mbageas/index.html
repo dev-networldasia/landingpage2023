@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quẳng Gánh Âu Lo - MB ageas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.mbageas.life/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.mbageas.life/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.mbageas.life/favicon/favicon-16x16.png"/>
+    <!-- OPEN GRAPH -->
+    <meta property="og:site_name" content="quangganhaulo.mbageas.life">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mbageas.life/uploads/_yGb-je28R6gDxjUNROMS/1615349149433_original.png" />
+    
+    <meta property="og:url" content="https://quangganhaulo.mbageas.life" />
+    <meta property="og:title" content="QUẲNG GÁNH ÂU LO -  MB ageas" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href="css/default.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css?v=1">
     <link rel="stylesheet" href="css/reponsive.css?v=1">
-    <title>MB ageas</title>
     <!-- Google Tag Manager -->    
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -50,7 +60,7 @@
                     <span>Đóng phí</span>
                     <strong>5 năm</strong>
                 </div>
-                <div class="line-2">
+                <div class="line-2" id="form1" >
                     <span>Bảo vệ lên tới</span>
                     <strong>100 tuổi</strong>
                 </div>
@@ -62,7 +72,7 @@
                     </div>
                     <div class="form">
                         <div class="bg-form">
-                            <div class="diablog" id="form1">
+                            <div class="diablog">
                                 <div class="top-form">
                                     <h2>Đăng ký nhận tư vấn <b>MIỄN PHÍ</b></h2>
                                 </div>
@@ -938,9 +948,9 @@
 						var myObj = JSON.parse(item);
 						if(myObj.result == "success"){	
 							var link = location.hostname;
-							window.location.href = "https://dev-networldasia.github.io/landingpage2023/mbageas/thank-you.html";
+							window.location.href = "/thank-you.html";
 						}else{
-							window.location.href = "https://dev-networldasia.github.io/landingpage2023/mbageas/thank-you.html";
+							window.location.href = "/thank-you.html";
 						}						
 					}
 				});			
